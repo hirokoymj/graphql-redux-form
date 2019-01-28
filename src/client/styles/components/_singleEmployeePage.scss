@@ -1,0 +1,82 @@
+//
+// Single Employee Page style
+// Mobile First CSS Method
+// Created by Hiroko Y.
+// Date: 2018-12-15
+// --------------------------------------------------
+.employeeDetailTbl{
+  border: 2px solid #ddd;
+  margin-top:5px;
+  background: #fff;
+  font-size: 16px;
+  .item{
+    font-weight: bold;
+    width: 25%;
+    background: #fff;
+    border-right: 2px solid #ddd;
+  }
+  tr>td, tr>th{
+    padding: 12px !important;
+  }
+}
+
+.centered-container{
+  float:none;
+  margin: 0 auto;
+}
+
+.next-prev-btn{
+  border-radius: 4px;
+  width: 40px;
+  margin-right: 5px;
+}
+
+.fa-trash-o{
+  font-size: 26px;
+}
+.fa-home{
+  font-size: 30px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.fa-angle-left, .fa-angle-right{
+  font-size:30px;
+  font-weight: bold;
+}
+.fa-long-arrow-left{
+  font-size:30px;
+  font-weight: bold;
+}
+
+.backtoDashboard{
+  position: relative;
+  text-align: left;
+  color:$primary-color;
+
+  .link-text{
+    position: absolute;
+    top:12px;
+  }
+  &:hover{
+    color: $secondary-color;
+  }
+}
+/* tablet (>= 768px)
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  .next-prev-btn{
+    border-radius: 15px;
+    width: 80px;
+    margin-right: 5px;
+  }
+}
+
+
+/* Desktop (>= 992px)
+-------------------------------------------------- */
+@media (min-width: 992px) {
+}
+
+/* Desktop (>= 1200px)
+-------------------------------------------------- */
+@media (min-width: 1200px){}
