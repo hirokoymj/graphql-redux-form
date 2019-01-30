@@ -16,10 +16,13 @@ const Header = (props) => {
           <NavItem eventKey={1} href="/" >
           Home
           </NavItem>
-          <NavItem eventKey={3} href="/myReduxForm">
+          <NavItem eventKey={2} href="/myReduxForm">
           My redux-form
           </NavItem>
-        </Nav>
+          <NavItem eventKey={2} href="/address">
+          Location Search
+          </NavItem>
+          </Nav>
       </Navbar.Collapse>
     </Navbar>
   )
