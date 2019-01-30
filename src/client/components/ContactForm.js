@@ -4,10 +4,11 @@ import validateContactForm from './validateContactForm';
 import withSubmit from './withSubmit';
 import withBookList from './withBookList';
 import withAuthorList from './withAuthorList';
-import { compose } from 'recompose';
+import { compose, withHandlers, withProps } from 'recompose';
 import cx from 'classnames';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
+import ContinueButton from './ContinueButton';
 
 const inputTextField = ({
   input,
@@ -63,10 +64,24 @@ const authorDropdownField = (field) => {
   )
 }
 
+// const ContinueButton = (props) =>{
+//   return (
+//     <button type="button" onClick={props.onRouteChange}>Continue</button>
+//   )
+// }
+
+// const enhanceContineButton = withHandlers({
+//   onRouteChange: (props) =>{
+//     this.props.history.push('/review');
+//   }
+// })
+
+
+
 
 let ContactForm = props => {
   console.log("ContactForm", props);
-  const { handleSubmit, pristine, reset, mySubmit, bookInfo, authorInfo } = props
+  const { handleSubmit, pristine, reset, mySubmit, bookInfo, authorInfo  } = props
   return (
     <form onSubmit={handleSubmit(mySubmit)}>
       <Field
@@ -91,7 +106,7 @@ let ContactForm = props => {
       <div>
         <button type="submit">Submit</button>
         <button type="button" onClick={reset}>Clear Values</button>
-        <Link to="/result">review</Link>
+        <ContinueButton history={history} path={"/result"} />
       </div>
     </form>
   )

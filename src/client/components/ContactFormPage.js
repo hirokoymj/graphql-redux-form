@@ -8,7 +8,7 @@ export default class ContactFormPage extends React.Component {
       <Grid>
         <Row>
           <Col xs={12} sm={6}>
-            <ContactForm />
+            <ContactForm history={this.props.history}/>
           </Col>
         </Row>
       </Grid>
