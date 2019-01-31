@@ -45,7 +45,7 @@ export default class GoogleMapPage extends Component{
         {this.state.latLng && 
           <div style={{ height: '100vh', width: '100%' }}>
             <GoogleMapReact
-              bootstrapURLKeys={{ key: "AIzaSyB4XoTrX5GdFS81Icx0OF8zxzL2i1vt8mg" }}
+              bootstrapURLKeys={{ key: "" }}
               center={this.state.latLng}
               zoom={10}
             >
