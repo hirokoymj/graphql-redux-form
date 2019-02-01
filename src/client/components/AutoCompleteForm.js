@@ -1,11 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-import { compose, withHandlers, withProps } from 'recompose';
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng,
-} from 'react-places-autocomplete';
-
+import { compose } from 'recompose';
+import PlacesAutocomplete from 'react-places-autocomplete';
 
 const LocationSearchInput = ({ input, meta }) => (
   <PlacesAutocomplete
@@ -47,7 +43,6 @@ const LocationSearchInput = ({ input, meta }) => (
     )}
   </PlacesAutocomplete>
 );
-
 
 let AutoCompleteForm = props => {
   return (
