@@ -1,4 +1,4 @@
-# React Google Map and location search Demo
+# Redux-Form Sample 1
 
 ### npm package
 
