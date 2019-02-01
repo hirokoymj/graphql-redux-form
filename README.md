@@ -1,4 +1,4 @@
-# Redux-Form Sample - master by HY 11
+# Redux-Form Sample - master by HY 12
 git
 **ContactForm.js**
 
