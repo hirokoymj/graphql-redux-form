@@ -1,5 +1,5 @@
 
-# Hiroko Test - today is Friday
+# Hiroko Test - today is Fri.
 
 **ContactForm.js**
 
