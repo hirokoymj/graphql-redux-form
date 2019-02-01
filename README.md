@@ -1,4 +1,4 @@
-# Redux-form Test app
+# Redux-Form Sample 1
 
 **ContactForm.js**
 
