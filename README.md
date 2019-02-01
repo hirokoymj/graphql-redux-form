@@ -1,5 +1,4 @@
-
-# Redux-Form Sample - master by HY 77
+# Redux-Form Sample - master by HY 80
 
 **ContactForm.js**
 
