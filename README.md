@@ -1,4 +1,4 @@
-# Redux-Form Sample 1
+# Redux-Form Sample - master
 
 **ContactForm.js**
 
